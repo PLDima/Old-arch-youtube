@@ -1,6 +1,7 @@
 package com.app.youtubeedu.view
 
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import android.widget.Toast
 import androidx.appcompat.widget.SearchView
@@ -44,6 +45,16 @@ class SearchActivity : BaseActivity<SearchPresenter>(), SearchContract.View {
             }
         })
         return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.e("logs", "RIP")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.e("logs", "RIP dest")
     }
 
     override fun showVideoList(videoList: List<Video>) {

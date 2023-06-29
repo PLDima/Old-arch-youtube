@@ -119,6 +119,6 @@ class YouTubeRemoteDataSourceImpl @Inject constructor(private val youTube: YouTu
 
     companion object {
 
-        private const val API_KEY = "some key"
+        private const val API_KEY = "AIzaSyCGOLjPGewW1MGkWgT5C8JhTyIwD0uv8NU"
     }
 }

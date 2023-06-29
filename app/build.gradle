@@ -6,13 +6,13 @@ plugins {
 }
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 33
     buildToolsVersion "30.0.3"
 
     defaultConfig {
         applicationId "com.app.youtubeedu"
         minSdkVersion 23
-        targetSdkVersion 30
+        targetSdkVersion 33
         versionCode 1
         versionName "1.0"
     }
@@ -47,7 +47,7 @@ tasks.withType(Test) {
 
 dependencies {
     def daggerVersion = '2.37'
-    def room_version = "2.3.0"
+    def room_version = "2.4.0-alpha03"
 
     implementation "androidx.room:room-runtime:$room_version"
     kapt "androidx.room:room-compiler:$room_version"
